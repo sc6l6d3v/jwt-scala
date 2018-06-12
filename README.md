@@ -6,17 +6,20 @@ jwt-scala
 An implementation of [JSON Web Tokens](http://self-issued.info/docs/draft-ietf-oauth-json-web-token.html)
 
 ### Setup
-Jwt-scala has been published for scala 2.11/2.10 and sbt 0.13.6
 
-Add the dependency to your build.sbt
-```
+Jwt-scala has been published for scala 2.12/2.11/2.10 and sbt 1.1.6.
+
+Add the dependency to your build.sbt:
+
+```scala
 libraryDependencies += "io.really" %% "jwt-scala" % "1.2.2"
 ```
 
 ### Usage
 
 #### Encode
-```
+
+```scala
 import io.really.jwt._
 import play.api.libs.json.Json
 
@@ -25,7 +28,7 @@ val jwt = JWT.encode("secret-key", payload)
 ```
 By default Encode will use `HS256` Algorithm but you can pass optional Algorithm
 
-```
+```scala
 val jwt = JWT.encode("secret-key", payload, Some(Algorithm.HS256))
 ```
 ***Supported algorithm are :*** 
@@ -35,7 +38,7 @@ val jwt = JWT.encode("secret-key", payload, Some(Algorithm.HS256))
 
 #### Decode
 
-```
+```scala
 val payload = Json.obj("name" -> "Ahmed", "email" -> "ahmed@gmail.com")
 val jwt = JWT.encode("secret", payload)
 
