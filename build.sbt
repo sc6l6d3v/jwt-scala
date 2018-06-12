@@ -21,9 +21,9 @@ pomIncludeRepository := { _ => false }
 pomExtra := (
   <developers>
     <developer>
-      <id>reallylabs</id>
-      <name>Really Labs</name>
-      <url>http://really.io</url>
+      <id>3tty0n</id>
+      <name>Yusuke Izawa</name>
+      <url>https://github.com/3tty0n</url>
     </developer>
   </developers>)
 
