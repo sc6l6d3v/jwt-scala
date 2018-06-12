@@ -1,12 +1,12 @@
 name := "jwt-scala"
 
-version := "1.2.3"
+version := "1.3.0"
 
-organization := "io.really"
+organization := "com.github.3tty0n"
 
-crossScalaVersions := Seq("2.10.6", "2.11.11", "2.12.4")
+crossScalaVersions := Seq("2.10.6", "2.11.11", "2.12.6")
 
-homepage := Some(url("https://github.com/reallylabs/jwt-scala"))
+homepage := Some(url("https://github.com/3tty0n/jwt-scala"))
 
 licenses += "Apache2" -> url("http://www.opensource.org/licenses/Apache-2.0")
 
@@ -35,7 +35,7 @@ publishTo := {
     Some("releases" at nexus + "service/local/staging/deploy/maven2")
 }
 
-scalaVersion := "2.11.11"
+scalaVersion := "2.12.6"
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.1" % "test",
