@@ -1,16 +1,16 @@
+import xerial.sbt.Sonatype._
+
 name := "jwt-scala"
 
-version := "1.3.0-SNAPSHOT"
+version := "1.3.0"
+
+scalaVersion := "2.12.6"
 
 organization := "com.github.3tty0n"
 
 crossScalaVersions := Seq("2.10.6", "2.11.11", "2.12.6")
 
-sonatypeProfileName := "com.github.3tty0n"
-
 publishMavenStyle := true
-
-import xerial.sbt.Sonatype._
 
 sonatypeProjectHosting := Some(GitHubHosting("3tty0n", "jwt-scala", "yuizalp@gmail.com"))
 
@@ -29,14 +29,13 @@ publishArtifact in Test := false
 
 pomIncludeRepository := { _ => false }
 
-pomExtra :=
-  <developers>
-    <developer>
-      <id>3tty0n</id>
-      <name>Yusuke Izawa</name>
-      <url>https://github.com/3tty0n</url>
-    </developer>
-  </developers>
+developers :=
+  List(
+    Developer(
+    id="3tty0n",
+    name="Yusuke Izawa",
+    email="yuizalp@gmail.com",
+    url=url("https://github.com/3tty0n")))
 
 publishTo := {
   val nexus = "https://oss.sonatype.org/"
@@ -46,7 +45,7 @@ publishTo := {
     Some("releases" at nexus + "service/local/staging/deploy/maven2")
 }
 
-scalaVersion := "2.12.6"
+sources in (Compile, doc) := Seq()
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.1" % "test",
