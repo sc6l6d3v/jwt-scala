@@ -12,7 +12,7 @@ Jwt-scala has been published for scala 2.12/2.11/2.10 and sbt 1.1.6.
 Add the dependency to your build.sbt:
 
 ```scala
-libraryDependencies += "io.really" %% "jwt-scala" % "1.2.2"
+libraryDependencies += "com.github.3tty0n" %% "jwt-scala" % "1.3.0"
 ```
 
 ### Usage
@@ -20,7 +20,7 @@ libraryDependencies += "io.really" %% "jwt-scala" % "1.2.2"
 #### Encode
 
 ```scala
-import io.really.jwt._
+import com.github._3tty0n.jwt._
 import play.api.libs.json.Json
 
 val payload = Json.obj("name" -> "Ahmed", "email" -> "ahmed@gmail.com")
