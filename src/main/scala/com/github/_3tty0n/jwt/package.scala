@@ -1,7 +1,4 @@
-/**
- * Copyright (C) 2014-2015 Really Inc. <http://really.io>
- */
-package io.really
+package com.github._3tty0n
 
 import play.api.libs.json._
 

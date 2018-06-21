@@ -1,7 +1,4 @@
-/**
- * Copyright (C) 2014-2015 Really Inc. <http://really.io>
- */
-package io.really.jwt
+package com.github._3tty0n.jwt
 
 abstract class JWTException(message: String) extends Exception(message)
 

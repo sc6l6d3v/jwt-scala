@@ -1,9 +1,6 @@
-/**
- * Copyright (C) 2014-2015 Really Inc. <http://really.io>
- */
-package io.really.jwt
+package com.github._3tty0n.jwt
 
-import io.really.jwt.JWTException.{InvalidPrivateKey, InvalidPublicKey}
+import com.github._3tty0n.jwt.JWTException.{InvalidPrivateKey, InvalidPublicKey}
 import org.bouncycastle.jce.provider.BouncyCastleProvider
 import org.bouncycastle.openssl.PEMWriter
 import org.scalatest.{FlatSpec, Matchers}

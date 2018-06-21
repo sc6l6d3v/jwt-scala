@@ -1,10 +1,7 @@
-/**
- * Copyright (C) 2014-2015 Really Inc. <http://really.io>
- */
-package io.really.jwt
+package com.github._3tty0n.jwt
 
 import javax.crypto.Mac
-import io.really.jwt.JWTException.InvalidAlgorithm
+import JWTException.InvalidAlgorithm
 import play.api.libs.json._
 import javax.crypto.spec.SecretKeySpec
 import org.apache.commons.codec.binary.Base64

@@ -1,8 +1,8 @@
-package io.really.jwt
+package com.github._3tty0n.jwt
 
 import java.security.spec.PKCS8EncodedKeySpec
 import java.security.{PrivateKey, PublicKey}
-import io.really.jwt.JWTException.{InvalidPublicKey, InvalidPrivateKey}
+import com.github._3tty0n.jwt.JWTException.{InvalidPublicKey, InvalidPrivateKey}
 import org.apache.commons.codec.binary.Base64
 import scala.util.{Try, Success, Failure}
 
