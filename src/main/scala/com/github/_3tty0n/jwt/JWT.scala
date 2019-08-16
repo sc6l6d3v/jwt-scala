@@ -1,12 +1,11 @@
 package com.github._3tty0n.jwt
 
 import javax.crypto.Mac
-import JWTException.InvalidAlgorithm
 import play.api.libs.json._
 import javax.crypto.spec.SecretKeySpec
 import org.apache.commons.codec.binary.Base64
 
-import scala.util.{Try, Success, Failure}
+import scala.util.{Failure, Success, Try}
 
 
 object JWT {
@@ -37,7 +36,7 @@ object JWT {
   private[jwt] def signHmac(algorithm: Algorithm, msg: String, key: String): String = {
     val mac: Mac = Mac.getInstance(algorithm.toString)
     mac.init(new SecretKeySpec(key.getBytes("utf-8"), algorithm.toString))
-    encodeBase64url(new String(mac.doFinal(msg.getBytes("utf-8"))))
+    Base64.encodeBase64URLSafeString(mac.doFinal(msg.getBytes("utf-8")))
   }
 
   /**
