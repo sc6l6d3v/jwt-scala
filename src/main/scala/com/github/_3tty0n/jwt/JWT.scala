@@ -5,7 +5,7 @@ import play.api.libs.json._
 import javax.crypto.spec.SecretKeySpec
 import org.apache.commons.codec.binary.Base64
 
-import scala.util.{Failure, Success, Try}
+import scala.util.{Try, Success, Failure}
 
 
 object JWT {
