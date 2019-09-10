@@ -1,4 +1,4 @@
-package com.github._3tty0n
+package com.github.sc6l6d3v
 
 import play.api.libs.json._
 

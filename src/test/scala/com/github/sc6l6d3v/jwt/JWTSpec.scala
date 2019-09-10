@@ -1,7 +1,7 @@
 /**
  * Copyright (C) 2014-2015 Really Inc. <http://really.io>
  */
-package com.github._3tty0n.jwt
+package com.github.sc6l6d3v.jwt
 
 import org.scalatest.{FlatSpec, Matchers}
 import play.api.libs.json.Json

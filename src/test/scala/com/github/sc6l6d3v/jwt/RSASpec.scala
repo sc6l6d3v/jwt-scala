@@ -1,6 +1,6 @@
-package com.github._3tty0n.jwt
+package com.github.sc6l6d3v.jwt
 
-import com.github._3tty0n.jwt.JWTException.{InvalidPrivateKey, InvalidPublicKey}
+import com.github.sc6l6d3v.jwt.JWTException.{InvalidPrivateKey, InvalidPublicKey}
 import org.bouncycastle.jce.provider.BouncyCastleProvider
 import org.bouncycastle.openssl.PEMWriter
 import org.scalatest.{FlatSpec, Matchers}

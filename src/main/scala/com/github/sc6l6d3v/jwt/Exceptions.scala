@@ -1,4 +1,4 @@
-package com.github._3tty0n.jwt
+package com.github.sc6l6d3v.jwt
 
 abstract class JWTException(message: String) extends Exception(message)
 
