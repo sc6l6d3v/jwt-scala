@@ -84,7 +84,7 @@ object JWT {
 
 
   /**
-   * encode first part on jwt 'header'
+   * encode first part on jwt 'header', fixing alpha order on fields
    * @param algorithm that represent algorithm using on JWT
    * @param header that represent data for JWT header
    * @return String
@@ -92,9 +92,9 @@ object JWT {
   private[jwt] def encodeHeader(algorithm: Option[Algorithm], header: JsObject): String = {
     val h = algorithm match {
       case Some(alg) => Json.obj("alg" -> alg.name, "typ" -> "JWT") ++ header
-      case None => Json.obj("typ" -> "JWT", "alg" -> "") ++ header
+      case None => Json.obj("alg" -> "","typ" -> "JWT") ++ header
     }
-    encodeBase64url(Json.stringify(h))
+    encodeBase64url(Json.stringify(JsObject(h.fields.sortBy(_._1))))
   }
 
   /**
