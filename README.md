@@ -1,7 +1,7 @@
 jwt-scala
 =========
 
-[![Build Status](https://travis-ci.org/reallylabs/jwt-scala.svg)](https://travis-ci.org/reallylabs/jwt-scala)
+[![Build Status](https://travis-ci.org/sc6l6d3v/jwt-scala.svg)](https://travis-ci.org/sc6l6d3v/jwt-scala)
 
 An implementation of [JSON Web Tokens](http://self-issued.info/docs/draft-ietf-oauth-json-web-token.html)
 
